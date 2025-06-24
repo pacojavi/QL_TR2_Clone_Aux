@@ -61,7 +61,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 1n 1u",
+        ".tran 1n 600n",
         ".kicad adjustpaths",
         ".save all"
       ],
@@ -76,28 +76,36 @@
       "showGrid": true,
       "traces": [
         {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/CLK)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(255, 255, 51)",
+          "cursor1": {
+            "position": 2.900917431192661e-07,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/CLKCT)",
+          "trace_type": 257
+        },
+        {
           "color": "rgb(55, 126, 184)",
+          "cursor2": {
+            "position": 2.708256880733945e-07,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
           "signal": "V(/DS)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(77, 175, 74)",
-          "signal": "V(/MUX)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(152, 78, 163)",
-          "signal": "V(/T1_P15)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(255, 127, 0)",
-          "signal": "V(/T2_P9)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(166, 86, 40)",
-          "signal": "V(/T3)",
           "trace_type": 257
         }
       ]

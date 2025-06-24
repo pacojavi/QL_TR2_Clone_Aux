@@ -2544,6 +2544,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 120.65) (xy 220.98 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f8e7b26-a724-4b06-9695-0e3670676d4f")
+	)
+	(wire
+		(pts
 			(xy 163.83 93.98) (xy 163.83 95.25)
 		)
 		(stroke
@@ -2982,6 +2992,16 @@
 		)
 		(uuid "3b411f10-0364-4894-935e-2e3c5e9065fd")
 	)
+	(label "CLK"
+		(at 220.98 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6105ee0b-bf2e-4f5f-ac55-53a567f0cfb4")
+	)
 	(label "T2_P9"
 		(at 106.68 111.76 0)
 		(effects
@@ -3386,7 +3406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "y1=5 y2=0 td=100n tr=2n tf=2n tw=300n per=534n"
+		(property "Sim.Params" "y1=5 y2=0 td=270n tr=2n tf=2n tw=266n per=534n np=1"
 			(at 227.33 101.4701 0)
 			(effects
 				(font
@@ -4853,6 +4873,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 220.98 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3932859-6e1d-467a-8513-3a6e28fad6ca")
+		(property "Reference" "#PWR0133"
+			(at 220.98 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ea7b164-d5c9-4993-9416-f93e6f62d5a6")
+		)
+		(instances
+			(project "Ql_TR2_Delay"
+				(path "/b05895ac-eee3-4f83-bd81-d4a8efee41a8"
+					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 172.72 99.06 0)
 		(mirror y)
@@ -4986,6 +5071,146 @@
 			(project "Ql_TR2_Delay"
 				(path "/b05895ac-eee3-4f83-bd81-d4a8efee41a8"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC04")
+		(at 213.36 120.65 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6715ab3-de99-4acd-b6d0-044bdc707772")
+		(property "Reference" "U6"
+			(at 213.36 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC04"
+			(at 213.36 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex Inverter"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "74HC.LIB"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74HC04"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=in 2=out"
+			(at 213.36 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "c0357850-823b-405b-a76f-c3358db89da3")
+		)
+		(pin "2"
+			(uuid "b5466627-8de2-4bbc-8e16-fe412e8afdf7")
+		)
+		(pin "5"
+			(uuid "0a7a908d-b90e-4f12-b75d-95cf06c3d25a")
+		)
+		(pin "14"
+			(uuid "b02d04dc-6196-4af5-a08b-b261fa3d7035")
+		)
+		(pin "1"
+			(uuid "2a2ce560-1908-4b46-9114-65b6db14b5c6")
+		)
+		(pin "10"
+			(uuid "8189b973-7bdd-4513-a05c-6c338757af58")
+		)
+		(pin "3"
+			(uuid "a33e8cb6-a069-45f0-aad1-9ce54a4360d6")
+		)
+		(pin "4"
+			(uuid "3b8638a6-91f8-498c-83fa-f0a1982faf4c")
+		)
+		(pin "12"
+			(uuid "0e65d751-49ef-4394-8c7c-80f0c8b9ee68")
+		)
+		(pin "11"
+			(uuid "9208375d-9d9e-4d66-a2bd-b523d9dc7b30")
+		)
+		(pin "6"
+			(uuid "5221c1ad-dad3-4a9b-82b2-5ced40b43324")
+		)
+		(pin "9"
+			(uuid "9cff792e-fdf2-4a7d-8ad5-dabd86b35292")
+		)
+		(pin "13"
+			(uuid "24b50fc7-10c7-4175-bd64-df916db9d235")
+		)
+		(pin "7"
+			(uuid "92fed1a7-e737-4f9d-b0f2-e1cead610d39")
+		)
+		(instances
+			(project "Ql_TR2_Delay"
+				(path "/b05895ac-eee3-4f83-bd81-d4a8efee41a8"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -5562,6 +5787,113 @@
 			(project "Ql_TR2_Delay"
 				(path "/b05895ac-eee3-4f83-bd81-d4a8efee41a8"
 					(reference "#PWR0130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VPULSE")
+		(at 220.98 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7b76b4f-5f86-4f87-8493-eb424d4e6df0")
+		(property "Reference" "CLK1"
+			(at 224.79 129.4101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VPULSE"
+			(at 224.79 131.9501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 220.98 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, pulse"
+			(at 220.98 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 220.98 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "PULSE"
+			(at 220.98 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 220.98 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "y1=0 y2=5 td=0n tr=2n tf=2n tw=66.66n per=133.33n"
+			(at 224.79 134.4901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "7f76b0ce-3535-4376-8676-e226bbabf5eb")
+		)
+		(pin "2"
+			(uuid "9f5599ce-5a83-4d95-8dcf-c988ae05b8e6")
+		)
+		(instances
+			(project "Ql_TR2_Delay"
+				(path "/b05895ac-eee3-4f83-bd81-d4a8efee41a8"
+					(reference "CLK1")
 					(unit 1)
 				)
 			)
